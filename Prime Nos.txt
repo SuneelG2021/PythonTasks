@@ -1,0 +1,14 @@
+import math
+
+def primeNums(num):
+    for x in range(2,num):
+        count=round((math.sqrt(x))+1)
+        flag=1
+        for y in range(2,count):
+            if (x%y == 0):
+                flag=0
+                break
+        if (flag==1):
+            print(x)
+            
+primeNums(100)
